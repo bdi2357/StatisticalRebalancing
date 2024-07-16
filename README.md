@@ -1,7 +1,7 @@
 # StatisticalRebalancing
 
-## Description
-This repository contains the implementation of various imputation techniques and rebalancing strategies for handling imbalanced datasets in binary classification tasks. The focus is on comparing the performance of different imputation methods and evaluating the effectiveness of different rebalancing approaches.
+## Overview
+This project introduces a novel rebalancing technique based on probabilistic estimations determined by simple classifiers.
 
 ## Key Features
 - **Rebalancing Strategies**: Evaluation of resampling techniques (oversampling, undersampling), synthetic data generation (SMOTE, ADASYN), and adjusting class weights.
