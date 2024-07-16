@@ -37,6 +37,20 @@ This project introduces a novel rebalancing technique based on probabilistic est
 - Fancyimpute
 - XGBoost (if using the focused oversampling with XGBoost)
 
+  Convergence Handling
+To handle convergence issues, the imputation process is monitored with a timer. If the process takes too long, the dataset is split further, and the imputation is retried on smaller subsets. This recursive splitting continues until the imputation completes within the specified time.
+
+Results and Evaluation
+Evaluate the imputation methods and rebalancing technique by comparing the distributions, correlations, and model performance before and after imputation. Cross-validation is used to assess the robustness of the methods.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## References
+Bordley, R. F., Nguyen, T. T., & Zhang, D. (2010). Learning and overcoming imbalanced performance caused by data bias. Decision Analysis, 7(4), 350-373.
+Devi, D., Purusothaman, G., Krishna, S. R., & Nepsha, A. (2018). Handling imbalanced data using auxiliary node data descriptions. Knowledge-Based Systems, 156, 48-62.
+Loannou, M., Kokkinakis, G., & Moustakas, K. (2021). SMOTE-D: Synthetic minority over-sampling technique with density factor. Knowledge-Based Systems, 231, 107404.
+
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any improvements or suggestions.
 
